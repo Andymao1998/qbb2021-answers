@@ -1,0 +1,4 @@
+total 10736
+ 760 K27me3.bed		 336 K9me3.bed		   8 README.md		  88 dm6.chrom.sizes
+ 496 K4me3.bed		  32 LADs_Kc.bed	2344 S2_9state.bed	6672 fbgenes.bed
+
