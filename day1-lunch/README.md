@@ -18,3 +18,10 @@ Biological observations:
 
 (base) (13:48:07)~/qbb2021-answers/day1-lunch/$cut -f 1 fbgenes.bed | uniq -c
 
+#Biological observations for question 3#
+
+1. There are more gene annotations on chromosome 3 in total than on chromosome 2
+
+2. There are very few genes on chromosome Y or chromosome M
+
+ 
