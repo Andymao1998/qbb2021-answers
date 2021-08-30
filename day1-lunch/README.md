@@ -14,4 +14,6 @@ Biological observations:
 
 #2 LADs in Drosophila melanogaster are limited to chromosome 2, 3 and X
 
+#Summarize distribution of gene annotations across chromosomes#
 
+(base) (13:48:46)~/qbb2021-answers/day1-lunch/$head -n 5 fbgenes.bed
