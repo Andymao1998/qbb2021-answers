@@ -16,4 +16,5 @@ Biological observations:
 
 #Summarize distribution of gene annotations across chromosomes#
 
-(base) (13:48:46)~/qbb2021-answers/day1-lunch/$head -n 5 fbgenes.bed
+(base) (13:48:07)~/qbb2021-answers/day1-lunch/$cut -f 1 fbgenes.bed | uniq -c
+
