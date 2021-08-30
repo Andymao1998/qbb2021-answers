@@ -8,4 +8,10 @@
 
 (base) (13:15:35)~/qbb2021-answers/day1-lunch/$wc -l *.bed
 
+Biological observations:
+
+#1 K27me3 marks are more prevalent in comparison to K4me3 and K9me3
+
+#2 LADs in Drosophila melanogaster are limited to chromosome 2, 3 and X
+
 
