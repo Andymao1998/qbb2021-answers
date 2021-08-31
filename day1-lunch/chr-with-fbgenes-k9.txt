@@ -1,0 +1,8 @@
+1624 chr2L
+1796 chr2R
+1569 chr3L
+1301 chr3R
+ 874 chr4
+3515 chrX
+   8 chrY
+
