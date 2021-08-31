@@ -24,4 +24,6 @@ Biological observations:
 
 2. There are very few genes on chromosome Y or chromosome M
 
- 
+#4 
+
+(base) (22:48:38)~/qbb2021-answers/day1-lunch/$bedtools intersect -a fbgenes.bed -b K9me3.bed -wa | cut -f 1 | uniq -c  
