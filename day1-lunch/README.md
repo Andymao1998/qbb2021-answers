@@ -27,3 +27,11 @@ Biological observations:
 #4 
 
 (base) (22:48:38)~/qbb2021-answers/day1-lunch/$bedtools intersect -a fbgenes.bed -b K9me3.bed -wa | cut -f 1 | uniq -c  
+
+Observations for question 4 
+
+1. Chromosome 2,3, and X has more genes with H3K9 marks compared with chromosome 4
+
+2. Chromosome Y has few genes with H3K9 activation marks in comparison to other chromosomes.
+
+3. On chromosome 2, the left arm emcompass more genes with H3K9 marks while on chromosome 3, vice versa.
