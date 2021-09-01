@@ -36,7 +36,7 @@ while condition==0: # when the condition is TRUE, enter while loop
     if (gene_info_start <= query) and (query <= gene_info_end):
         print(gene_name, str(query-gene_info_start))
         condition = 2 # if we find the perfect match, set condition = false to exit the loop
-    elif old_mid == mid:# if the mid of our definition is constant, while the first argument is not true. The situation indicates that we can't find the perfect match per description and we need to output the neighboring two data for further comparison
+    elif int(old_mid) == int(mid):# if the mid of our definition is constant, while the first argument is not true. The situation indicates that we can't find the perfect match per description and we need to output the neighboring two data for further comparison
         print(genes[int(lo)][0], genes[int(lo)][1], genes[int(lo)][2], genes[int(hi)][0], genes[int(hi)][1],genes[int(hi)][2])
         gene_1 = genes[int(lo)]
         gene_2 = genes[int(hi)]
