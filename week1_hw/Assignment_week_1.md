@@ -62,9 +62,11 @@ Coverage = (read count * read length ) / total genome size
 
 ## How many kmers occur exactly 50 times?
 
-$ jellyfish count -m 21 -C -s 1000000 asm/*.fq
-$ jellyfish histo mer_counts.jf > reads.histo
-$ mate reads.histo
+\$ jellyfish count -m 21 -C -s 1000000 asm/*.fq
+
+\$ jellyfish histo mer_counts.jf > reads.histo
+
+\$ mate reads.histo
 
 1030 kmers
 
@@ -110,8 +112,9 @@ $ spades.py --pe1-1 frag180.1.fq --pe1-2 frag180.2.fq --mp1-1 jump2k.1.fq --mp1-
 ## What is the total length of the contigs?
 
 
-$ samtools faidx contigs.fasta
-$ mate contigs.fasta.fai
+samtools faidx contigs.fasta
+
+mate contigs.fasta.fai
 
 NODE_1_length_105830_cov_20.649108      105830  36      60      61
 
