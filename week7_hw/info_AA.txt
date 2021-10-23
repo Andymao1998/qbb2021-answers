@@ -1,0 +1,3 @@
+alignment score:3801.0
+gaps in AA 1:9
+gaps in AA 2:0
