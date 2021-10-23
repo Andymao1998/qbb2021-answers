@@ -1,0 +1,3 @@
+alignment score:266300.0
+gaps in sequence 1:46
+gaps in sequence 2:77
