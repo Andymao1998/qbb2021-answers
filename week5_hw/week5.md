@@ -6,7 +6,7 @@ get the data
 tar xzf g1e.tar.xz
 unpack the data
 
-### Mapping reads
+## Mapping reads
 bowtie2 -x /Users/cmdb/data/indexes/bowtie2/mm10/mm10 -U CTCF_ER4.fastq -S CTCF_ER4.sam
 bowtie2 -x /Users/cmdb/data/indexes/bowtie2/mm10/mm10 -U CTCF_G1E.fastq -S CTCF_G1E.sam
 bowtie2 -x /Users/cmdb/data/indexes/bowtie2/mm10/mm10 -U input_ER4.fastq -S ER4.sam
@@ -14,7 +14,7 @@ bowtie2 -x /Users/cmdb/data/indexes/bowtie2/mm10/mm10 -U input_G1E.fastq -S G1E.
 
 Pay attention that these are unpaired reads, by using less command 
 
-### Mapping reads
+## Mapping reads
 
 conda activate 
 enter chipseq environment
@@ -23,18 +23,18 @@ pip install --upgrade numpy
 macs2 callpeak -t CTCF_ER4.sam -c ER4.sam --name=CTCF_ER4 --gsize=61000000 --bdg 
 macs2 callpeak -t CTCF_G1E.sam -c G1E.sam --name=CTCF_G1E --gsize=61000000 --bdg 
 
-###Differential binding
+## Differential binding
 
 bedtools subtract -A -a ER4/CTCF_ER4_peaks.narrowPeak -b G1E/CTCF_G1E_peaks.narrowPeak > differential_binding_ER4 
 sites gained during differentiation
 bedtools subtract -A -a G1E/CTCF_G1E_peaks.narrowPeak -b ER4/CTCF_ER4_peaks.narrowPeak > differential_binding_G1E 
 sites lost during differentiation
 
-###Feature overlapping
+## Feature overlapping
 bedtools intersect -a Mus_musculus.GRCm38.94_features.bed -b G1E/CTCF_G1E_peaks.narrowPeak > G1E_intersect 
 bedtools intersect -a Mus_musculus.GRCm38.94_features.bed -b ER4/CTCF_ER4_peaks.narrowPeak > ER4_intersect
 
-### Plotting is demonstrated in Jupyter Notebook
+## Plotting is demonstrated in Jupyter Notebook
 
 ## Motif Discovery
 mkdir jaspar
