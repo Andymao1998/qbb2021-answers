@@ -78,6 +78,6 @@ head -n 100 ER4_sorted.narrowPeak > ER4_top100
 bedtools getfasta -fi /Users/cmdb/data/genomes/mm10.fa -bed ER4_top100 > ER4_top100.fa
 
 
-meme-chip -db /Users/cmdb/data/meme_db/motifs/motif_databases.12.21.tgz ER4_top100.fa
+meme-chip -maxw 20 -db /Users/cmdb/data/meme_db/motifs/motif_databases.12.21.tgz ER4_top100.fa
 
 tomtom memechip_out/meme_out/meme.txt  ~/qbb2021-answers/week5_hw/jaspar/JASPAR2018_CORE_non-redundant_pfms_meme/MA*
