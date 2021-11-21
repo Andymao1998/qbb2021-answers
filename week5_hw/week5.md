@@ -7,6 +7,7 @@ tar xzf g1e.tar.xz
 unpack the data
 
 # Mapping reads
+
 bowtie2 -x /Users/cmdb/data/indexes/bowtie2/mm10/mm10 -U CTCF_ER4.fastq -S CTCF_ER4.sam
 bowtie2 -x /Users/cmdb/data/indexes/bowtie2/mm10/mm10 -U CTCF_G1E.fastq -S CTCF_G1E.sam
 bowtie2 -x /Users/cmdb/data/indexes/bowtie2/mm10/mm10 -U input_ER4.fastq -S ER4.sam
@@ -37,6 +38,15 @@ sites lost during differentiation
 bedtools intersect -a Mus_musculus.GRCm38.94_features.bed -b G1E/CTCF_G1E_peaks.narrowPeak > G1E_intersect 
 
 bedtools intersect -a Mus_musculus.GRCm38.94_features.bed -b ER4/CTCF_ER4_peaks.narrowPeak > ER4_intersect
+
+
+
+## Feature geenration for the sites that are either gained or lost after differentitaion 
+
+bedtools intersect -a Mus_musculus.GRCm38.94_features.bed -b differential_binding_ER4 > sites_gained_after_diferentiation
+
+bedtools intersect -a Mus_musculus.GRCm38.94_features.bed -b differential_binding_G1E > sites_lost_after_diferentiation
+
 
 # Plotting is demonstrated in Jupyter Notebook
 
